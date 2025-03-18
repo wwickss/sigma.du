@@ -64,4 +64,3 @@
 #     # update proměnné opakovat, aby nedošlo k zacyklení programu
 #     opakovat = input("Chcete opakovat program?(ano/ne)")
 
-ASDAS
