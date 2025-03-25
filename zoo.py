@@ -1,26 +1,39 @@
-# # Popis programu
-# # Program počítá zvířata v zoo
-# # V zoo jsou tři druhy zvířat tygři, lvy a opice
-# # Program umožní uživateli provádět tři akce - přidat zvíře, odebrat zvíře a vypsat všechna zvířata
-# # Po jedné této akci se program automaticky zeptá jestli chce uživatel pokračovat
+# Popis programu
+# Program počítá zvířata v zoo
+# V zoo jsou tři druhy zvířat tygři, lvy a opice
+# Program umožní uživateli provádět tři akce - přidat zvíře, odebrat zvíře a vypsat všechna zvířata
+# Po jedné této akci se program automaticky zeptá jestli chce uživatel pokračovat
 
 
-# # Úkol
-# # Odkomentujte funkce
-# # Dopište funkce tak, aby fungoval celý program
-# # funkce pridej - má vstupní parametry zvire a počet - připočte k dané skupině tolik zvířat, kolik zadá uživatel(pocet)
-# # (pokud uživatel zadá neplatné zvíře vypíše se mu: "Neco si zadal špatně")
-# # funkce odeber - má vstupní parametry zvire a počet - odečte od dané skupiny tolik zvířat, kolik zadá uživatel(pocet)
-# # (pokud zadá neplatné zvíře, nebo bude chtít odbrat více zvířat než je aktuálně v zoo vypíše se mu: "Neco si zadal špatně")
-# # funkce vypis - vypíše všechna zvířata, která jsou aktuálně v zoo
+# Úkol
+# Odkomentujte funkce
+# Dopište funkce tak, aby fungoval celý program
+# funkce pridej - má vstupní parametry zvire a počet - připočte k dané skupině tolik zvířat, kolik zadá uživatel(pocet)
+# (pokud uživatel zadá neplatné zvíře vypíše se mu: "Neco si zadal špatně")
+# funkce odeber - má vstupní parametry zvire a počet - odečte od dané skupiny tolik zvířat, kolik zadá uživatel(pocet)
+# (pokud zadá neplatné zvíře, nebo bude chtít odbrat více zvířat než je aktuálně v zoo vypíše se mu: "Neco si zadal špatně")
+# funkce vypis - vypíše všechna zvířata, která jsou aktuálně v zoo
 
 
-# # Tuto část dopiš
+# Tuto část dopiš
 
-# #def pridej(zvire, pocet):
+def pridej(zvire,pocet):
+    global tygri
+    global lvy
+    global opice
     
+    if zvire == "tygr":
+        tygri = tygri+pocet
+    elif zvire == "lev":
+        lvy = lvy + pocet
+    elif zvire=="opice":
+        opice = opice+pocet
+    else:
+        print("Zadal si neco spatne")
+        
+           
 # #def odeber(zvire, pocet):
-    
+
 # #def vypis():
     
 
@@ -64,3 +77,4 @@
 #     # update proměnné opakovat, aby nedošlo k zacyklení programu
 #     opakovat = input("Chcete opakovat program?(ano/ne)")
 
+print(1)
